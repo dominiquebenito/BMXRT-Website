@@ -1,0 +1,40 @@
+.carousel {
+  margin-bottom: 0px;
+}
+
+.graph {
+  width: 1000px;
+  height: 500px;
+}
+
+.left {
+  width: 90%;
+  float: left;
+}
+
+.right {
+  width: 10%;
+  float: right;
+}
+
+h1 { 
+  font-size: 4em;
+  margin-top: 0.50em;
+  margin-bottom: 0.50em;
+  margin-left: 0em;
+  margin-right: 0em;
+  font-weight: bold;
+  text-shadow: 0 1px 1px rgba(0,0,0,.4);
+  text-align: center;
+}
+
+input[type="text"]{
+  width: 400px;
+  text-align: center;
+}
+
+#logoutButton {
+  margin-top: 20px;
+  background-color: #CC0000;
+  color: White;
+}

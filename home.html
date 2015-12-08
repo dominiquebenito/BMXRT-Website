@@ -1,0 +1,108 @@
+<!-- Author: Dominique Benito -->
+<!-- Date: October 22, 2015 -->
+<!-- Note: HTML for the login page of the BMX-RT -->
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head -->
+  <meta name="author" content="Dominique Benito">
+  <meta name="description" content="">
+
+  <title>BMX-RT: Home</title>
+
+  <link href="libs/bootstrap-3.3.5/css/bootstrap.css" rel="stylesheet">
+  <link href="resources/css/home.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Fixed navbar -->
+  <div class="navbar navbar-inverse navbar-static-top">
+    <div class="navbar-inner">
+      <div class="left">
+        <a class="brand" href="#myCarousel" data-slide-to="0">All</a>
+        <a class="brand" href="#myCarousel" data-slide-to="1">Best</a>
+        <a class="brand" href="#myCarousel" data-slide-to="2">Recent</a>
+        <!--<a class="brand" href="#myCarousel" data-slide-to="3">Setting</a>-->
+      </div>
+      <div class="right">
+        <a class="brand" href="#" style="float: right;" onclick="logout()">Logout</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="myCarousel" class="carousel slide" data-interval="false">
+    <div class="carousel-inner">
+
+      <!-- All section -->
+      <div class="item active" style="background-color: #FFFFFF;">
+        <h1>All Completion Times</h1>
+        <center><div class="graph" id="completion_all"></div></center>
+
+        <h1>All Heart Rates</h1>
+        <center><div class="graph" id="heart_all"></div></center>
+
+        <h1>All BPMs</h1>
+        <center><div class="graph" id="bpm_all"></div></center>
+
+        <h1>All Reaction Time</h1>
+        <center><div class="graph" id="reaction_all"></div></center>
+      </div>
+
+
+      <!-- Best section -->
+      <div class="item" style="background-color: #FFFFFF;">
+        <h1>Best Completion Time</h1>
+        <center><div class="graph" id="completion_best"></div></center>
+
+        <h1>Average Heart Rate</h1>
+        <center><div class="graph" id="heart_best"></div></center>
+
+        <h1>Best BPM</h1>
+        <center><div class="graph" id="bpm_best"></div></center>
+
+        <h1>Best Reaction Time</h1>
+        <center><div class="graph" id="reaction_best"></div></center>
+      </div>
+
+
+      <!-- Recent section -->
+      <div class="item" style="background-color: #FFFFFF;">
+        <h1>Recent Completion Time</h1>
+        <center><div class="graph" id="completion_recent"></div></center>
+
+        <h1>Recent Heart Rate</h1>
+        <center><div class="graph" id="heart_recent" ></div></center>
+
+        <h1>Recent BPM</h1>
+        <center><div class="graph" id="bpm_recent"></div></center>
+
+        <h1>Recent Reaction Time</h1>
+        <center><div class="graph" id="reaction_recent" ></div></center>
+      </div>
+
+      <!-- Settings section -->
+      <div class="item" style="background-color: #FFFFFF;">
+        <h1 style="margin-bottom: 0.75em;">User Settings</h1>
+        <center><div>
+          <div><input type="text" class="input-block-level" placeholder="Completion Time Threshold" id="ctt"></div>
+          <div><input type="text" class="input-block-level" placeholder="Reaction Time Threshold" id="rtt"></div>
+          <div><input type="text" class="input-block-level" placeholder="Heart Rate (BPM) Threshold" id="hrt"></div>
+          <button class="btn-large" type="button" onclick="saveThresholds()" id="logoutButton">Save</button>
+      </div></center>
+  </div>
+
+  <script src="https://www.parsecdn.com/js/parse-1.6.7.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+  <script src="libs/bootstrap-3.3.5/js/bootstrap.js"></script>
+
+  <script type="text/javascript" src="src/view_results.js"></script>
+
+
+  
+</body>
+</html>

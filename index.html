@@ -1,0 +1,67 @@
+<!-- Author: Dominique Benito -->
+<!-- Date: September 19, 2015 -->
+<!-- Note: HTML for the login page of the BMX-RT -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>BMT-RT</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="BMX-RT login in page">
+  <meta name="author" content="Dominique Benito">
+
+  <link href="libs/bootstrap-3.3.5/css/bootstrap.css" rel="stylesheet">
+  <link href="resources/css/userLogin.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="navbar navbar-inverse navbar-static-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <a class="brand" href="#myCarousel" data-slide-to="0">Login</a>
+        <a class="brand" href="#myCarousel" data-slide-to="1">Register</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="myCarousel" class="carousel slide" data-interval="false">
+    <div class="carousel-inner">
+      
+      <!-- Sign in section -->
+      <div class="item active" style="background-color: #FCFCFC;">
+        <div class="signin">
+          <center><form class="form-signin">
+            <div><img src="resources/img/project_logo_signin.png"></div>
+            <div><input type="text" class="input-block-level" placeholder="Username" name="userid"></div>
+            <div><input type="password" class="input-block-level" placeholder="Password" name="pswrd"></div>
+            <button class="btn-large" type="button" onclick="loginUser(this.form)" id="signinButton">Sign in</button>
+          </form></center>
+        </div>
+      </div>
+    
+      <!-- Register section -->
+      <div class="item" style="background-color: #CC0000;">
+        <div class="register">
+          <center><form class="form-signin" name="register" id="regForm">
+            <div><img src="resources/img/project_logo_reg.png"></div>
+            <div><input type="text" class="input-block-level" placeholder="Full Name" name="name"></div>
+            <div><input type="text" class="input-block-level" placeholder="Username" name="userid"></div>
+            <div><input type="text" class="input-block-level" placeholder="Email Address" name="email"></div>
+            <div><input type="password" class="input-block-level" placeholder="Password" name="pswrd"></div>
+            <div><input type="password" class="input-block-level" placeholder="Re-Type Password" name="pswrd2"></div>
+            <button class="btn-large" type="button" onclick="createUser(this.form)" id="regButton">Register</button>
+          </form></center>
+        </div>
+      </div>
+
+    </div>
+
+
+    <script src="https://www.parsecdn.com/js/parse-1.6.7.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="libs/bootstrap-3.3.5/js/bootstrap.js"></script>
+
+    <script type="text/javascript" src="src/app.js"></script>
+  </div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  margin-bottom: 0px;
+}
+
+.carousel .item {
+  height: 900px;
+}
+
+.register {
+  margin: auto;
+  box-shadow: 5px 5px 5px #888888;
+  background-color: #FCFCFC;
+  height: 900px;
+  /*width: 950px;*/
+}
+
+.signin {
+  margin: auto;
+  box-shadow: 5px 5px 5px #888888;
+  background-color: #CC0000;
+  height: 900px;
+  /*width: 950px;*/
+}
+
+input[type="text"], input[type="password"] {
+  width: 400px;
+}
+
+img {
+  background-color: transparent;
+  width: 400px;
+  height: 500px;
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+
+#regButton {
+  margin-top:15px;
+  background-color: #CC0000;
+  color: white;
+  font-weight: bold;
+}
+
+#signinButton {
+  margin-top:15px;
+  background-color: white;
+  color: #CC0000;
+  font-weight: bold;
+}
